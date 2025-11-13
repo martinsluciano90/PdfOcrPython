@@ -6,7 +6,7 @@ import io
 import tempfile
 import os
 
-pytesseract.pytesseract.tesseract_cmd = os.path.join(os.path.dirname(__file__), "tesseract", "tesseract.exe")
+pytesseract.pytesseract.tesseract_cmd = "tesseract"
 
 st.set_page_config(
     page_title="Conversor PDF OCR",
@@ -125,3 +125,4 @@ with st.expander("ℹ️ Informações sobre OCR"):
     - Certifique-se de que o texto está legível
     - Documentos com fontes maiores terão melhor reconhecimento
     """)
+
